@@ -8,6 +8,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
+  base: process.env.VITE_BASE_PATH || '/',
   server: {
     host: 'localhost',
     port: 3090,
